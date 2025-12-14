@@ -12,6 +12,10 @@ import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.getcwd(), os.pardir)))
 
+import torch_geometric.nn.conv.point_conv
+from torch_geometric.nn.conv.point_conv import PointNetConv
+torch_geometric.nn.conv.point_conv.PointConv = PointNetConv
+
 
 class ObjectEncoder(torch.nn.Module):
     def __init__(self, embed_dim: int, known_classes: List[str], known_colors: List[str], args):

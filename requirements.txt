@@ -5,7 +5,7 @@ matplotlib-inline==0.1.6
 nltk==3.8.1
 numpy==1.26.4
 open3d==0.18.0
-opencv-python==4.9.0.80
+#opencv-python==4.9.0.80
 pandas==2.2.1
 pillow==10.2.0
 plyfile==1.0.3
